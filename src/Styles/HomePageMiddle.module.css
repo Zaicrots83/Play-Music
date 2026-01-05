@@ -1,0 +1,74 @@
+.MiddleElement{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: linear-gradient(#000, #5c1111);
+}
+
+.CardSong{
+    width: 45%;
+    height: 10vh;
+    display:flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.SongInfo{
+    margin: 0%;
+    padding: 0%;
+    width: 90%;
+    display: flex;
+}
+
+.CardSong img{
+    height: 8vh;
+}
+
+.CardSong button{
+    background-color: #000;
+    color: #fff;
+    border-radius: 100%;
+    padding: 4%;
+}
+
+.CardSong button:Hover, .CardSong button:focus{
+    background-color: #5c1111;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.AudioOptions button{
+    background-color: #ffffffe7;
+    padding: 1.5%;
+    border-radius: 40%;
+    margin: 1% 0.5% 1% 0.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.AudioOptions button:hover{
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.AudioOptions button:focus{
+    background-color: #5c1111;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.AudioOptions{
+    width: 90%;
+    margin: 1% 5% 1% 5%;
+}
+
+.RecentSongs{
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+}

@@ -1,0 +1,69 @@
+03/01/2026
+1. Today i learned about the propety :focus, this is used when an input, a select or something 
+similar is activated, i also learned about the properti outline, this is the border that appears when you
+select an element like an input or a select.
+
+.searchBar input:focus{
+    outline: none;
+}
+
+2. Label, this is important to link elements in this case i use it to connect the icon of a magnifier with
+the input of the searchbar
+
+<label title="Search">🔎︎<input type="text" placeholder="What do you want to listen to?"></input></label>
+
+3. "THIS IS IMPORTANT" theres another class called focus-within this means that it will apply effects to a
+pather container when one of the child components is activated, for example:
+
+<div className = {Styles.searchBar}>
+    <label title="Search">🔎︎<input type="text" placeholder="What do you want to listen to?"></input></label>
+    <button title="Clear">✖</button>
+</div>
+
+.searchBar:focus-within{
+    outline: auto;
+}
+
+in this case when the input is activated it will apply the border to all the div, not just the input
+
+4. I also learned about the attribute title in html, it is used to show a message when the user hover over
+an item:
+
+<button title="This is a message">This is just an example</button>
+
+5. REALLY IMPORTANT setState
+this is used to manage the value of the elements, this is important to elements like textfields, inputs,
+etc.
+-First thing you have to do is import it: import { useState } from "react";
+-after that you'll have to define the initial value and the current value, you do this using a const:
+const [initialValue, currentValue] = useState("");
+-after that you have to declare the function in this case im using it to get the value of an input
+ 
+ function searchBarValue(e:React.ChangeEvent <HTMLInputElement>) {
+    currentValue(e.target.value);
+  }
+
+"important details": in this case im using ts so this doesnt recognize e/event so you have to clarify
+whats e, e is basically and event that's taking place in the website, for example someone writing inside
+an input, that's why you have to specify that this is a type of react: React.ChangeEvent, in this case im
+using it for an input, that's why i used <HTMLInputElement> but it will depend on what kind of element you
+are using.
+
+it is important to put the value in the input it means, put this value={initialValue} and of course the 
+function onChange={searchBarValue}
+
+-I created a button to erase the content of the input once the user click in there so to that i had to 
+put a function inside the button to change the state
+<button title="Clear" onClick={()=>currentValue("")}>✖</button>
+
+-To put JS inside a jsx you have to use this {}, using this React will understand that what's inside is
+JS, you can't use commands like if, you use something different
+
+{
+    initialValue && (
+                <button title="Clear" onClick={()=>currentValue("")}>✖</button>
+            )
+}
+
+it looks strange but basically means if initialValue is true it means is different of false or "" or 0 or
+null render the button x

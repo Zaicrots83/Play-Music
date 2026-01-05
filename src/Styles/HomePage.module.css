@@ -1,0 +1,25 @@
+.homepage {
+  background-color: #fff;
+  padding: 0%;
+  margin: 0%;
+  height: 100vh;
+}
+
+.MainContent {
+  display: flex;
+  height: 90vh;
+  margin: 0%;
+  padding: 0%;
+}
+
+body,
+header,
+html {
+  padding: 0%;
+  margin: 0%;
+}
+
+h1 {
+  padding: 0%;
+  margin: 0%;
+}

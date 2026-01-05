@@ -1,0 +1,142 @@
+.header {
+  margin: 0%;
+  padding: 0%;
+  max-height: 10vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+}
+
+.icon {
+  width: 20%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.icon img {
+  height: 8vh;
+  padding-left: 5%;
+}
+
+.icon img:hover,
+.searchBox button:hover,
+.options button:hover {
+  cursor: pointer;
+}
+
+.HomeIcon:hover {
+  color: #fff;
+  transition: 1s;
+  border: 1px solid #5c1111;
+  background-color: #5c1111;
+  font-size: 2.5vh;
+}
+
+.searchBox {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+.HomeIcon {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  margin: 0%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  border-radius: 100%;
+  height: 6vh;
+  font-size: 2.5vh;
+  background-color: transparent;
+}
+
+.HomeIcon:focus {
+  background-color: #5c1111;
+  transition: 0.5s;
+}
+
+.options {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  align-items: center;
+  width: 20%;
+}
+
+.options button {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 2vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+}
+
+.options button:hover {
+  font-size: 2.3vh;
+  transition: 0.5s;
+  text-decoration: underline;
+  color: #5c1111;
+}
+
+.searchBar {
+  background-color: white;
+  width: 50%;
+  margin: 0%;
+  padding: 1%;
+  padding-left: 2%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+  margin-left: 1%;
+  border: 1px solid black;
+}
+
+.searchBar Button {
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 2vh;
+  margin: 0%;
+  padding: 0%;
+  width: 10%;
+}
+
+.searchBar label {
+  display: flex;
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 2vh;
+  margin: 0%;
+  padding: 0%;
+  width: 90%;
+}
+
+.searchBar input {
+  width: 100%;
+  margin-left: 1%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 2vh;
+  border: none;
+}
+
+.searchBar input:focus {
+  outline: none;
+  background-color: #5c1111;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.searchBar:focus-within {
+  outline: auto;
+  background-color: #5c1111;
+  transition: 0.5s;
+}
