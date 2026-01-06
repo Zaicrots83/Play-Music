@@ -4,5 +4,80 @@
     margin: 0% 1% 0% 1%;
     padding: 0%;
     border-radius: 20px;
-    height: 80vh;
+    height: 74vh;
 } 
+
+.LeftContainer h6{
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 2.5vh;
+    width: 80%;
+    margin: 5% 10% 2% 10% ;
+}
+
+.SearchBar button{
+    color: rgb(0, 0, 0);
+    font-size: 2.3vh;
+    padding: 1.5%;
+    margin: 0%;
+    background-color: transparent;
+    border: none;
+} 
+
+.SearchBar{
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    background-color: #fff;
+}
+
+.SearchBar input{
+    height: 100%;
+    width: 75%;
+    padding: 2%;
+    font-family: "Nunito", sans-serif;
+    border: none;
+}
+
+.SearchBar input:focus{
+    outline: none;
+    border: none;
+}
+
+.SearchBar:focus-within{
+    background-color: #fff;
+    outline: auto;
+}
+
+.LibraryCard{
+    width: 80%;
+    margin: 2% 10% 0% 10%;
+    height: 7vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.LibraryCard h5{
+    color: #000;
+    font-family: "Nunito", sans-serif;
+    font-size: 3vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+.LibraryCard p{
+    color: #000;
+    font-family: "Nunito", sans-serif;
+    font-size: 2vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+.LibraryCard img{
+    height: 100%;
+    margin-right: 2%;
+}

@@ -1,2 +1,4 @@
 rgb(66, 62, 62)
 #5c1111
+
+font-family: "Nunito", sans-serif;

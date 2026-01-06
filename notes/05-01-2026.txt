@@ -1,0 +1,17 @@
+useRef
+This is an important React function cause it allows to interact beetween different components of the UI
+without the need of rendering components
+
+ const inputFocus = useRef<HTMLInputElement>(null);
+
+  const FocusInput = () => {
+    inputFocus.current?.focus();
+  };
+
+<button onClick={FocusInput}>
+<VscSearch className={Styles.MagnifierIcon} />
+</button>
+<input ref={inputFocus} type="text" placeholder="Look for a song" />
+
+In this case i used to focus on the input once the user clicks on the button, it is important to keep in
+mind use <HTMLInputElement> cause we're using TS and the symbol ? which avoids the app to crash. 

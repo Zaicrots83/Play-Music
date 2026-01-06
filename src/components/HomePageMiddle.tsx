@@ -1,14 +1,16 @@
 import Styles from "../Styles/HomePageMiddle.module.css";
 import ImageTest from "../assets/sukuna.jpg";
+import { FaPlay } from "react-icons/fa";
+
 
 const Card = () => {
   return (
     <div className={Styles.CardSong}>
       <div className={Styles.SongInfo}>
         <img src={ImageTest} alt="Song image" />
-        <p>Sukuna song</p>
+        <p>Song Name</p>
       </div>
-      <button>▶</button>
+      <button><FaPlay/></button>
     </div>
   );
 };

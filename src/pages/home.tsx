@@ -3,6 +3,7 @@ import Header from "../components/header.tsx"
 import MiddleScreen from "../components/HomePageMiddle.tsx"
 import LeftScreen from "../components/HomePageLeft.tsx" 
 import RigthScreen from "../components/HomePageRigth.tsx"
+import BottomScreen from "../components/HomePageBottom.tsx"
 
 const HomePage = () => {
     return(
@@ -13,6 +14,7 @@ const HomePage = () => {
                 <MiddleScreen/>
                 <RigthScreen/>
             </div>
+            <BottomScreen/>
         </div>
     )
 }

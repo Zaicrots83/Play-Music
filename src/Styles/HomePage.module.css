@@ -1,5 +1,5 @@
 .homepage {
-  background-color: #fff;
+  background-color: #000000ce;
   padding: 0%;
   margin: 0%;
   height: 100vh;
@@ -7,7 +7,7 @@
 
 .MainContent {
   display: flex;
-  height: 90vh;
+  height: 76vh;
   margin: 0%;
   padding: 0%;
 }

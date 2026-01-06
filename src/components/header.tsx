@@ -1,6 +1,8 @@
 import IconPage from "../assets/icon_image.png";
 import Styles from "../Styles/header.module.css";
 import { useState } from "react";
+import { FaHouse } from "react-icons/fa6";
+import { VscSearch } from "react-icons/vsc";
 
 const Header = () => {
   const [initialValue, currentValue] = useState("");
@@ -16,11 +18,11 @@ const Header = () => {
       </div>
       <div className={Styles.searchBox}>
         <button title="Home" className={Styles.HomeIcon}>
-          𖠿
+         <FaHouse/> 
         </button>
         <div className={Styles.searchBar}>
           <label title="Search">
-            🔎︎
+            <VscSearch className={Styles.SearchIcon}/>
             <input
               type="text"
               value={initialValue}
